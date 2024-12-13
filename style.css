@@ -1,0 +1,506 @@
+@import url('https://fonts.google.com/selection?query=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    min-width: 815px;
+    overflow: auto;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+header {
+    background-color: #FFDD00;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Jersey 10', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 50px;
+    gap: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+  
+.burger span {
+    width: 65px;
+    height: 13px;
+    background-color: black;
+}
+  
+/* Cover */
+.cover {
+    display: flex;
+    background-image: url('./photos_webp/cover.webp');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 625px;
+
+}
+
+.cover-content h1 {
+    margin-bottom: 10px;
+    font-size: 50px; 
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#cover-button {
+    background-color: rgb(144, 15, 15);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 125px;
+    border: none;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.cover-texte{
+    background-color: #0F021C;
+    text-align: center;
+    padding: 1.5%;
+}
+
+.cover-texte p {
+    color: white;
+    margin: 0 25px;
+    font-size: 25px;
+    font-weight: bold;
+    height: auto;
+}
+
+
+
+/* COLLECTIONS */
+.collections {
+    padding: 20px 15px;
+    margin: 0 60px;
+}
+  
+.collections h2 {
+    color: #000;
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+  
+#collection-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+  
+#collection-list li a{
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 411px;
+    height: 400px;
+    color: transparent;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    
+}
+
+#collection-audio {
+    background-image: url('./photos_webp/collection-audio.webp');
+}
+  
+#collection-video {
+    background-image: url('./photos_webp/collection-video.webp');
+}
+  
+#collection-artiste {
+    background-image: url('./photos_webp/collection-artiste.webp');
+}
+
+#collection-audio a:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./photos_webp/collection-audio.webp');
+    color: white;
+}
+  
+#collection-video a:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./photos_webp/collection-video.webp');
+    color: white;
+}
+  
+#collection-artiste a:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./photos_webp/collection-artiste.webp');
+    color: white;
+}
+
+/* AUDIOS */
+.audios {
+    padding: 50px 100px;
+}
+
+.audio-grip {
+    flex-wrap: wrap;
+}
+
+.audios h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.audio-list {
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.audio-img {
+    width: 100%px;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-audio {
+    display: flex;
+    flex-direction: column;
+    background-color: #33658A;
+    width: 100%;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.info-audio p {
+    text-align: left;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.info-audio audio {
+    align-self: center;
+    width: 80%;
+    margin-top: 100px;
+}
+
+/* VIDEOS */
+.videos {
+    padding: 0;
+}
+
+.videos h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-grid {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    flex: 1;
+    flex-wrap: wrap;
+}   
+
+.video {
+    margin: auto;
+    width: 40%;
+    height: auto;
+}
+
+.video video{
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+}
+
+.video p{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ARTISTES */
+.artistes {
+    padding: 80px 100px;
+    
+}
+
+.artistes h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.artistes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.picture-artist{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.picture-artist:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/*A PROPOS */
+.about {
+    padding: 80px 100px;
+    
+}
+
+.about h2  {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+.about img {
+    width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about #title-about  {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.about #texte-about  {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/* Contact Section */
+.contact {
+    margin: auto;
+    text-align: center;
+    background-color: #33658A;
+    color: white;
+    width: 70%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    margin-bottom: 0;
+}
+
+.contact-content p{
+    margin-bottom: 50px;
+}
+
+.contact-content span {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.contact-content form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content #mail {
+    width: 98%;
+    padding: 10px;
+    border: none;
+    margin: 0 5px;
+}
+
+.contact-content textarea {
+    width: 98%;
+    height: 250px;
+    margin: 0 5px;
+}
+
+
+.contact-content button {
+    margin: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: rgb(144, 15, 15);
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    background-color: #FFDD00;
+    color: black;
+    
+}
+
+/*Menu Burger navigation */
+@media screen and (max-width: 1225px) {
+    .logo-container{
+        margin:0;
+    }
+
+    header nav ul li a {
+        display: none;
+    }
+    
+    .burger {
+        display: flex;
+    }
+
+}
+
+/*Part Collection*/
+@media screen and (max-width: 1007px) {
+
+   
+    #collection-list {
+        justify-content: center;
+
+    }
+    
+}
+
+/*Part Audio*/
+@media screen and (max-width: 1000px) {  
+    .audio-list{
+        flex-direction: column;
+        font-size: 15px;
+        height: auto;
+    }
+
+    
+    .info-audio audio{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+/*Part Video*/
+@media screen and (max-width: 1070px) {  
+    .video-grid{
+        flex-direction: column;
+    }
+    .video{
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+

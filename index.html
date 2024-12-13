@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongUniverse</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.svg" alt="Logo SongUniverse" class="logo"/>
+                <p>SongUniverse</p>
+            </div>
+            <ul>
+                <li><a href="#collections">COLLECTIONS</a></li>
+                <li><a href="#about">A PROPOS</a></li>
+                <li><a href="#contact">CONTACTEZ-NOUS</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cover">
+            <div class="cover-content">
+                    <h1>Explorez un univers sonore généré par l'IA</h1>
+                <button id="cover-button">Explorer</button>
+            </div>
+        </section>
+
+            <section class="cover-texte">
+            <p id="texte"> 
+                Il est parfois dur de trouver le genre musical parfait qui convient à nos goûts.
+                <br>
+                Sur cette plateforme nous mettons en valeur des genre musicaux moins connus.
+                
+            </p>
+        </section>
+
+        <section class="collections" id="collections">
+            <h2>COLLECTIONS</h2>
+            <div>
+                <ul id="collection-list">
+                    <li id="collection-audio"><a href="#audios">AUDIOS</a></li>
+                    <li id="collection-video"><a href="#videos">VIDEOS</a></li>
+                    <li id="collection-artiste"><a href="#artistes">ARTISTES</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="audios" id="audios">
+            <h2>AUDIOS</h2>
+            <div class="audio-grid">
+
+                <div id="audio1" class="audio-list">
+                    <img src="./photos_webp/audio1.webp" alt="Image contenant deux paons" class="audio-img"/>
+                    <div class="info-audio">
+                        <p><strong>TITRE :</strong> Карна</p>
+                        <p><strong>Style :</strong> #carnatic</p>
+                        <p><strong>Artiste :</strong> Леонід Українець</p>
+                        <audio src="./audios/audio1.mp3" controls></audio>
+                    </div>
+                </div>
+
+                <div id="audio2" class="audio-list">
+                    <img src="./photos_webp/audio2.webp" alt="Image d'un violoncelle" class="audio-img"/>
+                    <div class="info-audio">
+                        <p><strong>TITRE :</strong> Viola I</p>
+                        <p><strong>Style :</strong> #handpan #dark #electro #cryptic #violin</p>
+                        <p><strong>Artiste :</strong> insaneruediger</p>
+                        <audio src="./audios/audio2.mp3" controls></audio>
+                    </div>
+                </div>
+
+                <div id="audio3" class="audio-list">
+                    <img src="./photos_webp/audio3.webp" alt="Image d'une plaine avec des cocotier" class="audio-img"/>
+                    <div class="info-audio">
+                        <p><strong>TITRE :</strong> SASA</p>
+                        <p><strong>Style :</strong> #maloya</p>
+                        <p><strong>Artiste :</strong> LarryP</p>
+                        <audio src="./audios/audio3.mp3" controls></audio>
+                    </div>                 
+                </div>
+
+            </div>
+        </section>
+
+        <section class="videos" id="videos">
+            <h2>VIDEOS</h2>
+            <div class="video-grid">
+                <div class="video" id="video1">
+                    <video controls autoplay muted>
+                        <source src="./videos_webm/loficity.webm" type="video/webm">
+                        Votre navigateur ne support pas cette video
+                    </video>
+                    <p>LOFICITY</p>
+                </div>
+                <div class="video" id="video2">
+                    <video controls autoplay muted>
+                        <source src="./videos_webm/dragon.webm" type="video/webm">
+                        Votre navigateur ne support pas cette video
+                    </video>
+                    <p>DRAGON FIRE</p>
+                </div>
+        </section>
+
+        <section class="artistes" id="artistes">
+            <h2>ARTISTES</h2>
+            <div class="artistes-grid">
+                <img class="picture-artist" src="./photos_webp/artiste12.webp" alt="Artiste numero 1">
+                <img class="picture-artist" src="./photos_webp/artiste10.webp" alt="Artiste numero 2">
+                <img class="picture-artist" src="./photos_webp/artiste8.webp" alt="Artiste numero 3">
+                <img class="picture-artist" src="./photos_webp/artiste9.webp" alt="Artiste numero 4">
+                <img class="picture-artist" src="./photos_webp/artiste5.webp" alt="Artiste numero 5">
+                <img class="picture-artist" src="./photos_webp/artiste11.webp" alt="Artiste numero 6">
+                <img class="picture-artist" src="./photos_webp/artiste3.webp" alt="Artiste numero 7">
+                <img class="picture-artist" src="./photos_webp/artiste4.webp" alt="Artiste numero 8">
+                <img class="picture-artist" src="./photos_webp/artiste2.webp" alt="Artiste numero 9">
+                <img class="picture-artist" src="./photos_webp/artiste7.webp" alt="Artiste numero 10">
+                <img class="picture-artist" src="./photos_webp/artiste6.webp" alt="Artiste numero 11">
+                <img class="picture-artist" src="./photos_webp/artiste1.webp" alt="Artiste numero 12">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>A PROPOS</h2>
+            <div class="about-content">
+                <img src="./photos_webp/about-us.webp" alt="Personnel version cartoon">
+                <p id="title-about">“La musique est le reflet de l’âme”</p>
+                <p id="texte-about">Eternelle insatisfait nous ne nous retrouvions pas dans les genres musicaux existants.
+                    <br>
+                    Musiciens, chanteurs et compositeurs nous avons parcourus le monde en recherche de nouveaux genre, puis est venu l’ère de l’IA ...</p>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>CONTACTEZ-NOUS</h2>
+            <section class="contact-content">
+                <p>Vous souhaitez contribuer à cette plateforme ?
+                    <br>
+                    Envoyer nous un message ou une musique !</p>
+
+                <form>
+                    <span>Email</span>
+                    <input id="mail" type="email" required>
+                    <span>Message</span>
+                    <textarea required></textarea>
+                    <span>Envoyer une musique (optionnel)</span>
+                    <input id="file" type="file">
+                    <button type="submit">Envoyer</button>
+                </form>
+
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright SongUniverse</p>
+    </footer>
+</body>
+</html>
