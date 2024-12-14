@@ -1,6 +1,5 @@
-@import url('https://fonts.google.com/selection?query=Hammersmith+One');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
-
+@import url('https://fonts.google.com/selection?query=Hammersmith+One'); /* Style de la police de la page */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap'); /* Style Pixelisés */
 
 * {
     margin: 0;
@@ -11,13 +10,15 @@
 body {
     line-height: 1.6;
     background-color: #f8f9fa;
-    min-width: 815px;
+    min-width: 800px;
     overflow: auto;
     font-family: 'Hammersmith One', sans-serif;
 }
 
+
+/* ============== Header ============================*/
 header {
-    background-color: #FFDD00;
+    background-color: #F1D302;
     padding: 10px 20px;
 }
 
@@ -38,7 +39,7 @@ header nav {
     margin-left: 50px;
 }
 
-.logo {
+.logo-container img {
     width: 100px;
     height: 100px;
 }
@@ -69,20 +70,20 @@ header nav ul li a:hover {
     color: white;
 }
 
-.burger {
+#burger {
     cursor: pointer;
     display: none;
     flex-direction: column;
     gap: 8px;
 }
   
-.burger span {
+#burger span {
     width: 65px;
     height: 13px;
     background-color: black;
 }
   
-/* Cover */
+/* ============== COVER ==================================*/
 .cover {
     display: flex;
     background-image: url('./photos_webp/cover.webp');
@@ -100,13 +101,13 @@ header nav ul li a:hover {
 
 .cover-content h1 {
     margin-bottom: 10px;
-    font-size: 50px; 
+    font-size: 50px;
     text-align: center;
     padding: 10px 20px;
 }
 
-#cover-button {
-    background-color: rgb(144, 15, 15);
+.cover-content button {
+    background-color: #C1292E;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -115,13 +116,20 @@ header nav ul li a:hover {
     border: none;
     cursor: pointer;
     margin-top: 100px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
 }
 
-.cover-texte{
-    background-color: #0F021C;
-    text-align: center;
-    padding: 1.5%;
+.cover-content button:hover {
+    background-color: #7C090D;
 }
+
+
+.cover-texte{
+    background-color: #161925;
+    text-align: center;
+    padding: 1.1%;
+}
+
 
 .cover-texte p {
     color: white;
@@ -133,7 +141,7 @@ header nav ul li a:hover {
 
 
 
-/* COLLECTIONS */
+/* ============== COLLECTIONS =============================*/
 .collections {
     padding: 20px 15px;
     margin: 0 60px;
@@ -203,7 +211,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-/* AUDIOS */
+/* ============== AUDIOS =============================*/
 .audios {
     padding: 50px 100px;
 }
@@ -224,7 +232,7 @@ header nav ul li a:hover {
     display: flex;
     align-items: stretch;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 0 15px 15px 0;
     margin-bottom: 20px;
     height: 400px;
 }
@@ -233,19 +241,21 @@ header nav ul li a:hover {
     width: 100%px;
     height: auto;
     object-fit: cover;
+    border-radius: 0;
 }
 
 .info-audio {
     display: flex;
     flex-direction: column;
-    background-color: #33658A;
+    background-color: #235789;
     width: 100%;
     padding: 10px 30px;
     color: white;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 15px 15px 0;
 }
 
-.info-audio p {
+
+.info-audio span {
     text-align: left;
     font-size: 30px;
     margin: 5px;
@@ -257,7 +267,7 @@ header nav ul li a:hover {
     margin-top: 100px;
 }
 
-/* VIDEOS */
+/* ============== VIDEOS ===============================*/
 .videos {
     padding: 0;
 }
@@ -299,7 +309,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-/* ARTISTES */
+/* ============== ARTISTES ==========================*/
 .artistes {
     padding: 80px 100px;
     
@@ -332,9 +342,9 @@ header nav ul li a:hover {
 
 }
 
-/*A PROPOS */
+/* ============== A PROPOS =========================*/
 .about {
-    padding: 80px 100px;
+    padding: 10px 100px;
     
 }
 
@@ -377,16 +387,17 @@ header nav ul li a:hover {
 
 
 
-/* Contact Section */
+/* ============== CONTACTS =============================*/
 .contact {
     margin: auto;
     text-align: center;
-    background-color: #33658A;
+    background-color: #235789;
     color: white;
     width: 70%;
     height: auto;
     margin-bottom: 100px;
 }
+
 
 .contact h2 {
     display: flex;
@@ -431,24 +442,32 @@ header nav ul li a:hover {
     margin: 50px;
     width: 200px;
     padding: 10px 20px;
-    background-color: rgb(144, 15, 15);
+    background-color: #C1292E;
     color: white;
     border: none;
     cursor: pointer;
     align-self: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
 }
 
-/* Footer */
+.contact-content button:hover{
+    background-color: #7C090D;
+}
+
+
+/* ============== FOOTER ===============================*/
 footer {
     font-family: 'Jersey 10', sans-serif;
     font-size: 60px;
     text-align: center;
-    background-color: #FFDD00;
+    background-color: #F1D302;
     color: black;
     
 }
 
-/*Menu Burger navigation */
+/* ============== MEDIA QUERIES ==============================*/
+
+/* ===== MENU BURGER =====*/
 @media screen and (max-width: 1225px) {
     .logo-container{
         margin:0;
@@ -458,13 +477,13 @@ footer {
         display: none;
     }
     
-    .burger {
+    #burger {
         display: flex;
     }
 
 }
 
-/*Part Collection*/
+/* ===== PART COLLECTIONS =====*/
 @media screen and (max-width: 1007px) {
 
    
@@ -475,14 +494,18 @@ footer {
     
 }
 
-/*Part Audio*/
+/* ===== PART AUDIOS =====*/
 @media screen and (max-width: 1000px) {  
     .audio-list{
         flex-direction: column;
         font-size: 15px;
         height: auto;
+        border-radius: 0;
     }
 
+    .info-audio {
+        border-radius: 0px;
+    }
     
     .info-audio audio{
         width: 100%;
@@ -490,7 +513,7 @@ footer {
     }
 }
 
-/*Part Video*/
+/* ===== MENU VIDEOS =====*/
 @media screen and (max-width: 1070px) {  
     .video-grid{
         flex-direction: column;
